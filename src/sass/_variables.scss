@@ -12,7 +12,7 @@ $white:                     #fff !default;
 $black:                     #000 !default;
 $blueDark:                  #0b0b0b !default;
 $lightYellow:				#f5ecd2 !default;
-$brightYellow:				#dbbe32 !default;
+$brightOrange:				#ce8930 !default;
 
 // Scaffolding
 // -------------------------
@@ -23,14 +23,14 @@ $hrBorder:                  $black !default;
 // Links
 // -------------------------
 $linkColor:                 $lightYellow !default;
-$linkColorHover:            $brightYellow;
+$linkColorHover:            $brightOrange;
 
 
 // Typography
 // -------------------------
 
-$sans:                      sans-serif !default;
-$serif:                     serif !default;
+$sans:                      "futura" !default;
+$serif:                     "SerifGothicBQ-ExtraBold" !default;
 
 $thin:                      100 !default;
 $light:                     300 !default;
@@ -44,7 +44,7 @@ $baseFontFamily:            $sans !default;
 $baseLineHeight:            22px !default;
 
 $headingsFontWeight:        $bold !default;
-$headingsFontFamily:        inherit !default;
+$headingsFontFamily:        $serif !default;
 $headingsColor:             inherit !default;
 
 // Borders

@@ -1,15 +1,11 @@
 header {
-	//header styles go here
+	overflow: auto;
+	position: relative;
+	z-index: 1;
+	display: block;
+	align:center;
+	background-color: $blueDark;
 
-	//so think about list types, i.e. ol vs ul
-	//think about display for elements, i.e. display: block vs display: inline-block, look up what those do
-	//don't worry about custom fonts yet
-	//try to use classes and define them in typography
-	//i.e. class="header-link"
-	//then in typography
-	//.header-link {
-	//font-size: 100000000000px;
-	//}
 	h1 {
 		 color: $lightYellow;
 	}
@@ -18,55 +14,26 @@ header {
 
 	}
 
-	ul	{
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
 
 	li  {
-		float: left;
+		text-align: center;
 		font-size: 12px;
-		letter-spacing: 1.5px;
-		margin-left: 60px;
-		margin-top: 40px;
+		letter-spacing: 3px;
+		margin-top: 45px;
 	}
 
-	.btn {
-		color: $brightYellow;
-		font-size: 12px;
-		letter-spacing: 1.5px;
-		padding: 10px 25px 10px 25px;
-		border: solid $brightYellow 2px;
-		text-decoration: none;
-		float: right;
-		margin-right: 60px;
-		margin-top: 30px;
-	}
-
-	.btn:hover {
-		background: #dbbf32;
-		text-decoration: none;
-		border: solid #dbbf32 2px;
-		color: $blueDark;
-		letter-spacing: 1.5px;
+	.btn-rsvp {
+		margin-top: 33px;
+		margin-bottom: 45px;
 	}
 
 	a   {
 		color: $lightYellow;
-	}
-
-	a:link	{
-		text-decoration: none;
-	}
-	a:visited	{
-		text-decoration: none;
-	}
-	a:hover	{
-		text-decoration: none;
-	}
-	a:active	{
-		text-decoration: none;
 	}
 
 }
