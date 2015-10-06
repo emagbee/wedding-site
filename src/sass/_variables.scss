@@ -9,18 +9,21 @@ $baseUrl: env_or_default("STATIC_URL", "/static/");
 // Colors
 // -------------------------
 $white:                     #fff !default;
-$black:                     #444 !default;
+$black:                     #000 !default;
+$blueDark:                  #0b0b0b !default;
+$lightYellow:				#f5ecd2 !default;
+$brightYellow:				#dbbe32 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:            $white !default;
-$textColor:                 $black !default;
+$bodyBackground:            $blueDark !default;
+$textColor:                 $lightYellow !default;
 $hrBorder:                  $black !default;
 
 // Links
 // -------------------------
-$linkColor:                 #08c !default;
-$linkColorHover:            darken($linkColor, 10%) !default;
+$linkColor:                 $lightYellow !default;
+$linkColorHover:            $brightYellow;
 
 
 // Typography
@@ -36,7 +39,7 @@ $medium:                    500 !default;
 $bold:                      600 !default;
 $ultraBold:                 800 !default;
 
-$baseFontSize:              10px !default;
+$baseFontSize:              12px !default;
 $baseFontFamily:            $sans !default;
 $baseLineHeight:            22px !default;
 

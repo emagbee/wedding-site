@@ -16,6 +16,8 @@
 // Updated inheritence version: http://blog.teamtreehouse.com/box-sizing-secret-simple-css-layouts#comment-50223
 html {
     box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
 }
 *,
 *:before,
@@ -27,9 +29,55 @@ html {
 // -----------
 
 body {
+	height: 100%;
+    min-height: 100%;
     font-size: $baseFontSize;
     font-family: $baseFontFamily;
     line-height: $baseLineHeight;
     color: $textColor;
     background-color: $bodyBackground;
 }
+
+
+.footer {
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 40px;
+  	color: $lightYellow;
+  	text-align: center;
+  	letter-spacing: 1px;
+
+	a:link	{
+		text-decoration: none;
+	}
+	a:visited	{
+		text-decoration: none;
+	}
+	a:hover	{
+		text-decoration: none;
+	}
+	a:active	{
+		text-decoration: none;
+	}
+
+	hr { 
+   		display: block;
+    	border-color: $lightYellow;
+    	margin-top: 40px;
+    	margin-bottom: 40px;
+    	margin-left: 60px;
+    	margin-right: 60px;
+    	border-width: 1px;
+    	opacity: 0.1;
+	}
+
+}
+
+img {
+	margin-bottom: 20px;
+}
+
+
+
