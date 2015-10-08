@@ -30,6 +30,7 @@ button {
         border: solid $brightOrange 3px;
         text-decoration: none;
         &:hover {
+            transition: opacity 0.3s $easeDefault;
             background: $brightOrange;
             text-decoration: none;
             border: solid $brightOrange 3px;
@@ -44,8 +45,9 @@ button {
         letter-spacing: 1.5px;
         padding: 20px 100px 20px 100px;
         text-decoration: none;
-        margin-top: 60px;
+        margin-top: 40px;
         &:hover {
+            transition: opacity .3s $easeDefault;
             background: $brightOrange;
             text-decoration: none;
             border: solid $brightOrange 3px;

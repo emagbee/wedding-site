@@ -5,6 +5,10 @@ module.exports = Marionette.AppRouter.extend({
 
     appRoutes: {
         '(/)': 'index',
+        'venue(/)': 'venue',
+        'hotel(/)': 'hotel',
+        'registry(/)': 'registry',
+        'rsvp(/)': 'rsvp',
         '*default': 'defaultHandler'
     },
 

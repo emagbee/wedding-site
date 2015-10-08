@@ -6,6 +6,11 @@ var channels = require('channels');
 var GlobalView = require('views/GlobalView');
 var BaseView = require('views/BaseView');
 var IndexView = require('views/IndexView');
+var VenueView = require('views/VenueView');
+var HotelView = require('views/HotelView');
+var RSVPView = require('views/RSVPView');
+var RegistryView = require('views/RegistryView');
+var HeaderView = require('views/HeaderView');
 
 module.exports = Backbone.Marionette.Controller.extend({
 
@@ -22,6 +27,7 @@ module.exports = Backbone.Marionette.Controller.extend({
     bootstrap: function () {
         this.globalView = new GlobalView();
         this.baseView = new BaseView();
+        this.headerView = new HeaderView();
 
         channels.globalChannel.on('navigate', this.navigate, this);
 
@@ -49,6 +55,26 @@ module.exports = Backbone.Marionette.Controller.extend({
     index: function () {
         var indexView = new IndexView();
         app.regionMain.show(indexView);
+    },
+
+    venue: function () {
+        var venueView = new VenueView();
+        app.regionMain.show(venueView);
+    },
+
+    hotel: function () {
+        var hotelView = new HotelView();
+        app.regionMain.show(hotelView);
+    },
+
+    rsvp: function () {
+        var rsvpView = new RSVPView();
+        app.regionMain.show(rsvpView);
+    },
+
+    registry: function () {
+        var registryView = new RegistryView();
+        app.regionMain.show(registryView);
     },
 
     defaultHandler: function (route) {

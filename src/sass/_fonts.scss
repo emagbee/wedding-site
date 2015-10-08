@@ -14,3 +14,14 @@
 //     font-style: normal;
 // }
 
+@font-face {
+  font-family: 'Serif Gothic Black';
+  src: url('../fonts/Serif_Gothic_Black Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Serif_Gothic_Black Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Serif_Gothic_Black Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Serif_Gothic_Black Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Serif_Gothic_Black Regular.svg#d1142223959fe1f8fc768288e2c320be') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}

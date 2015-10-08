@@ -1,9 +1,9 @@
+button:focus {outline:0;}
+
 header {
-	overflow: auto;
-	position: relative;
-	z-index: 1;
 	display: block;
-	align:center;
+	min-height: 90px;
+	text-align:center;
 	background-color: $blueDark;
 
 	h1 {
@@ -15,9 +15,18 @@ header {
 	}
 
 	ul {
-		list-style-type: none;
-		margin: 0;
+		position: absolute;
+		width: 100%;
+		margin-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
 		padding: 0;
+		background-color: rgba($blueDark, 0.9);
+		opacity: 0;
+		transition: opacity 0.3s $easeDefault;
+		&.is-open {
+			opacity: 1;
+		}
 	}
 
 	li  {
@@ -28,12 +37,43 @@ header {
 	}
 
 	.btn-rsvp {
-		margin-top: 33px;
-		margin-bottom: 45px;
+		margin-top: 30px;
+		margin-bottom: 60px;
 	}
 
-	a   {
+	a.link   {
 		color: $lightYellow;
+	}
+
+	a.hover {
+		color: $linkColorHover;
+	}
+
+	a.active {
+		color: $linkColorActive;
+	}
+
+	.btn-hamburger {
+    	display: block;
+    	position: absolute;
+    	top:30px;
+    	width: 80px;
+    	height: 52px;
+    	right: 10px;
+		background-image: url('../images/hamburger.svg');
+		background-repeat: no-repeat;
+		text-indent: -999rem;
+		z-index: 2;
+		&.is-open {
+			background-image: url('../images/close.svg');
+			width: 80px;
+			height: 52px;
+			right: 10px;
+
+		}
+		&:focus {
+			outline: none;
+		}
 	}
 
 }

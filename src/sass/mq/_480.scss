@@ -1,3 +1,40 @@
 //
 // 480 Breakpoint
 // ---------------------------
+header {
+	.btn-close {
+    	display: block;
+    	position: absolute;
+    	top:30px;
+    	width: 80px;
+    	height: 52px;
+    	right: 10px;
+		background-image: url('../images/hamburger.svg');
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+}
+
+.masthead-wrapper {
+	margin-top: 0px;
+	z-index: 0;
+}
+
+.content-wrapper {
+	margin-top: 0;
+}
+
+.footer {
+	padding-top: 200px;
+	hr { 
+   		display: block;
+    	border-color: $lightYellow;
+    	margin-top: 40px;
+    	margin-bottom: 40px;
+    	margin-left: 10px;
+    	margin-right: 10px;
+    	border-width: 1px;
+    	padding-bottom: 40px;
+    	opacity: 0.1;
+	}
+}
