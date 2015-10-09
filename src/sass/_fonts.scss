@@ -17,8 +17,8 @@
 @font-face {
   font-family: 'Serif Gothic Black';
   src: url('../fonts/SerifGothicStd-Black.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/SerifGothicStd-Black.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/SerifGothicStd-Black.ttf.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/SerifGothicStd-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/SerifGothicStd-Black.woff') format('woff'), /* Modern Browsers */
        url('../fonts/SerifGothicStd-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SerifGothicStd-Black.svg#d1142223959fe1f8fc768288e2c320be') format('svg'); /* Legacy iOS */
        
@@ -29,8 +29,8 @@
 @font-face {
   font-family: 'Serif Gothic Extra Bold';
   src: url('../fonts/SerifGothicStd-ExtraBold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/SerifGothicStd-ExtraBold.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/SerifGothicStd-ExtraBold.ttf.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/SerifGothicStd-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/SerifGothicStd-ExtraBold.woff') format('woff'), /* Modern Browsers */
        url('../fonts/SerifGothicStd-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/SerifGothicStd-ExtraBold.svg#d1142223959fe1f8fc768288e2c320be') format('svg'); /* Legacy iOS */
        
@@ -41,11 +41,11 @@
 @font-face {
   font-family: 'Futura Book';
   src: url('../fonts/FuturaLTPro-Book.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/FuturaLTPro-Book.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/FuturaLTPro-Book.ttf.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/FuturaLTPro-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FuturaLTPro-Book.woff') format('woff'), /* Modern Browsers */
        url('../fonts/FuturaLTPro-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/FuturaLTPro-Book.svg#d1142223959fe1f8fc768288e2c320be') format('svg'); /* Legacy iOS */
        
-  font-style:   normal;
+  font-style:   normal; 
   font-weight:  normal;
 }
