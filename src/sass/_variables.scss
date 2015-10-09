@@ -30,9 +30,9 @@ $linkColorActive:			$brightOrange;
 // Typography
 // -------------------------
 
-$sans:                      "futura" !default;
-$serif:                     "SerifGothicBQ-ExtraBold" !default;
-$serifGothic: 				"Serif Gothic Black" !default;
+$sans:                      "Futura Book" !default;
+$serifGothic:               "Serif Gothic Extra Bold" !default;
+$serifGothicBlack: 			"Serif Gothic Black" !default;
 
 $thin:                      100 !default;
 $light:                     300 !default;
@@ -45,8 +45,7 @@ $baseFontSize:              12px !default;
 $baseFontFamily:            $sans !default;
 $baseLineHeight:            22px !default;
 
-$headingsFontWeight:        $bold !default;
-$headingsFontFamily:        $serif !default;
+$headingsFontWeight:        none !default;
 $headingsColor:             inherit !default;
 
 // Borders

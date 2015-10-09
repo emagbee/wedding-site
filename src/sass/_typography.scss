@@ -37,31 +37,38 @@ cite { font-style: normal; }
 // ---------
 h1, h2, h3, h4, h5, h6 {
     margin: ($baseLineHeight / 2) 0;
-    font-weight: $headingsFontWeight;
-    font-family: $headingsFontFamily;
+ //   font-weight: $headingsFontWeight;
     line-height: 1.5;
     color: $headingsColor;
     text-rendering: optimizelegibility; // Fix the character spacing for headings
 }
 h1 { 
-    font-family: $serifGothic;
+    font-family: $serifGothicBlack;
     font-size: 60px;
-    letter-spacing: -3px; 
+    letter-spacing: -7px; 
     text-transform: uppercase;
 }
-h2 { font-size: 9.0em; }
+h2 { 
+    font-family: $serifGothic;
+    font-size: 9.0em; 
+}
 h3 { 
+    font-family: $serifGothic;
     font-size: 20px; 
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 h4 { 
+    font-family: $serifGothic;
     font-size: 1.6em;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 h5 { 
+
     font-size: 1.4em;
-    font-family: Futura;
+    font-family: $sans;
  }
-h6 { font-size: 1.2em; }
+h6 { 
+    font-family: $sans;
+    font-size: 1.2em; }
