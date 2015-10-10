@@ -1,4 +1,4 @@
-.region-main {
+.region-main-venue {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -8,16 +8,26 @@
 }
 
 .content-wrapper-venue {
-	top: 200px;
-	margin: -550px auto 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	padding-top: 250px;
+	padding-bottom: 250px;
 	text-align: center;
-	padding-top: 200px;
+	background-image: url("../images/marquee_venue.jpg");
+	background-repeat: no-repeat;
+	z-index: -20;
 }
 
 .copy-block-venue {
 	text-align: center;
 	font-size: 16px;
 	line-height: 1.5;
-	margin: 285px auto 0 auto;
+	margin: 65px auto 0 auto;
 	width: 450px;
 }

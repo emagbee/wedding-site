@@ -40,7 +40,7 @@ header {
     }
 }
 
-.masthead-wrapper {
+.masthead-wrapper-home {
 	z-index: 0;
 	width: auto;
 	.masthead-mobile {
@@ -53,11 +53,27 @@ header {
 
 }
 
-.content-wrapper {
+.content-wrapper-home{
 	margin-top: -70px;
 }
 
 h3 {
 	font-size: 24px;
 	line-height: 1.5;
+}
+
+.region-main-venue {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.cbp-mc-column {
+	width: 50%;
+}
+.cbp-mc-column:nth-child(3) {
+	width: 100%;
 }

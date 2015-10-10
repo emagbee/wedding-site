@@ -7,16 +7,119 @@
 	width: 100%;
 }
 
-.content-wrapper-rsvp {
-	top: 200px;
-	margin: -550px auto 0 auto;
-	text-align: center;
-}
-
 .copy-block-rsvp {
 	text-align: center;
 	font-size: 16px;
 	line-height: 1.5;
 	margin: 285px auto 0 auto;
 	width: 450px;
+}
+
+.cbp-mc-form {
+	position: relative;
+	text-align: left;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+
+.cbp-mc-form:after { 
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 33%;
+	padding: 10px 30px;
+    margin: 0 auto 0 auto;
+}
+
+.cbp-mc-form label {
+	font-family: $serifGothic;
+	display: block;
+	padding: 30px 20px 10px 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	padding: 20px 10px;
+	color: $lightYellow;
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: 3px solid $lightYellow;
+	font-size: 16px; 
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid $lightYellow;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $lightYellow;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $lightYellow;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $lightYellow;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $lightYellow;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: left;
+	padding-top: 40px;
+	clear: both;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	color: $brightOrange;
+	margin: 0 auto 0 auto;
+    letter-spacing: 1.5px;
+    padding: 10px 30px 10px 30px;
+    border: solid $brightOrange 3px;
+    text-decoration: none;
+   	text-transform: uppercase;
+   	width: 100%;     
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	transition: opacity 0.3s $easeDefault;
+    background: $brightOrange;
+    text-decoration: none;
+    border: solid $brightOrange 3px;
+    color: $blueDark;
+    letter-spacing: 1.5px;
+}
+
+.content-wrapper-rsvp {
+	margin: 0 auto 0 auto;
+	padding-top: 0px;
+	text-align: center;
 }
