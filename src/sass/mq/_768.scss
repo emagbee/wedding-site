@@ -2,6 +2,7 @@
 // 768 Breakpoint
 // ---------------------------
 header {
+	padding-top: 0px;
     min-height: 90px;
     position: absolute;
     width: 100%;
@@ -42,38 +43,38 @@ header {
 
 .masthead-wrapper-home {
 	z-index: 0;
+	margin-top: 0px;
 	width: auto;
 	.masthead-mobile {
 		display: none;
 	}
 	.masthead-desktop {
-		padding-top: 45px;
 		display: block;
 	}
-
 }
 
 .content-wrapper-home{
 	margin-top: -70px;
 }
 
-h3 {
-	font-size: 24px;
-	line-height: 1.5;
+.content-wrapper-registry {
+	padding-top: 250px;
 }
 
-.region-main-venue {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
+.content-wrapper-rsvp {
+	padding-top: 250px;
+}
+
+h4 {
+	font-size: 22px;
+	line-height: 1.7;
 }
 
 .cbp-mc-column {
-	width: 50%;
+	width: 40%;
 }
 .cbp-mc-column:nth-child(3) {
 	width: 100%;
 }
+
+

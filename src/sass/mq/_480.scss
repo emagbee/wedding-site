@@ -15,9 +15,14 @@ header {
 	}
 }
 
-.masthead-wrapper {
-	margin-top: 0px;
-	z-index: 0;
+.masthead-wrapper-home {
+    margin-top: -85px;
+    z-index: 0;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    .masthead-desktop {
+        display: none;
+    }
 }
 
 .content-wrapper {

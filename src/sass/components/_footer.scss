@@ -1,9 +1,10 @@
 .footer {
+	font-size: 12px;
 	position: relative;
   	right: 0;
   	bottom: 0;
   	left: 0;
-  	padding: 40px;
+  	padding: 30px;
   	padding-top: 350px;
   	color: $lightYellow;
   	text-align: center;
@@ -25,12 +26,8 @@
 	hr { 
    		display: block;
     	border-color: $lightYellow;
-    	margin-top: 40px;
-    	margin-bottom: 40px;
-    	margin-left: 20px;
-    	margin-right: 20px;
+    	margin: 40 auto 40 auto;
     	border-width: 1px;
-    	padding-bottom: 40px;
     	opacity: 0.1;
 	}
 

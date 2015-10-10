@@ -1,4 +1,4 @@
-.region-main {
+.region-main-registry {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -8,15 +8,15 @@
 }
 
 .content-wrapper-registry {
-	top: 200px;
-	margin: -550px auto 0 auto;
+	padding-top: 150px;
+	margin: 0 auto 0 auto;
 	text-align: center;
 }
 
 .copy-block-registry {
 	text-align: center;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.6;
 	margin: 285px auto 0 auto;
 	width: 450px;
 }

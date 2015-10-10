@@ -1,15 +1,18 @@
 //
 // 600 Breakpoint
 // ---------------------------
-.masthead-wrapper-home {
-	z-index: 0;
-	width: auto;
-	.masthead-mobile {
-		display: block;
-	}
-}
-
 h1 {
 	font-size: 90px;
 }
 
+.masthead-wrapper-home {
+	margin-top: -85px;
+	z-index: 0;
+
+	.masthead-desktop {
+		display: none;
+	}
+	.masthead-mobile {
+		width: 100%;
+	}
+}

@@ -1,18 +1,21 @@
-.content-wrapper-hotel_ace {
-	position: relative;
+.region-main-hotel {
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100%;
 	width: 100%;
+}
+
+.content-wrapper-hotel_ace {
+	position: relative;
 	margin: 0 auto 0 auto;
 	padding-top: 250px;
 	padding-bottom: 250px;
 	text-align: center;
 	background-image: url("../images/ace_hotel.jpg");
 	background-repeat: no-repeat;
-	z-index: -20;
+	z-index: -2;
 }
 
 .content-wrapper-hotel_laac {
@@ -82,7 +85,7 @@
 .copy-block-hotel {
 	text-align: center;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.6;
 	margin: 65px auto 0 auto;
 	width: 450px;
 }

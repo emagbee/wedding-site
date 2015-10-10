@@ -1,18 +1,10 @@
-.region-main {
+.region-main-rsvp {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	width: 100%;
-}
-
-.copy-block-rsvp {
-	text-align: center;
-	font-size: 16px;
-	line-height: 1.5;
-	margin: 285px auto 0 auto;
-	width: 450px;
 }
 
 .cbp-mc-form {
@@ -31,7 +23,7 @@
 }
 
 .cbp-mc-column {
-	width: 33%;
+	width: 40%;
 	padding: 10px 30px;
     margin: 0 auto 0 auto;
 }
@@ -47,16 +39,18 @@
 .cbp-mc-form input,
 .cbp-mc-form textarea,
 .cbp-mc-form select {
-	padding: 20px 10px;
+	padding: 30px 15px;
 	color: $lightYellow;
 	display: block;
 	width: 100%;
 	background: transparent;
+	height: 50px;
+    font-size: 16px;
 }
 
 .cbp-mc-form input,
 .cbp-mc-form textarea {
-	border: 3px solid $lightYellow;
+	border: 2px solid $lightYellow;
 	font-size: 16px; 
 }
 
@@ -69,7 +63,7 @@
 .cbp-mc-form label:active + input,
 .cbp-mc-form label:active + textarea {
 	outline: none;
-	border: 3px solid $lightYellow;
+	border: 2px solid $lightYellow;
 }
 
 .cbp-mc-form select:focus {
@@ -93,7 +87,7 @@
 }
 
 .cbp-mc-submit-wrap {
-	text-align: left;
+	text-align: center;
 	padding-top: 40px;
 	clear: both;
 }
@@ -105,8 +99,7 @@
     padding: 10px 30px 10px 30px;
     border: solid $brightOrange 3px;
     text-decoration: none;
-   	text-transform: uppercase;
-   	width: 100%;     
+   	text-transform: uppercase;     
 }
 
 .cbp-mc-form input.cbp-mc-submit:hover {
@@ -120,6 +113,14 @@
 
 .content-wrapper-rsvp {
 	margin: 0 auto 0 auto;
-	padding-top: 0px;
+	padding-top: 150px;
 	text-align: center;
+}
+
+.copy-block-rsvp {
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 65px auto 0 auto;
+	width: 450px;
 }
