@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
     font-family: $serifGothicBlack;
     font-size: 60px;
-    letter-spacing: 0px; 
+    letter-spacing: 1px; 
     text-transform: uppercase;
 }
 h2 { 
@@ -67,10 +67,11 @@ h4 {
 h5 { 
 
     font-size: 1.4em;
-    font-family: $sans;
+    font-family: $sansFutura;
  }
 h6 { 
-    font-family: $serifGothic;
-    font-size: 1.2em; 
-    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: $sansFutura;
+    font-size: 15px; 
+    letter-spacing: 2px;
 }
