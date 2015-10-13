@@ -13,7 +13,7 @@ var app = express();
 
 // static folder setup
 app.use(express.static(path.join(__dirname, './build/')));
-app.use(favicon(__dirname + '/build/favicon.ico'));
+app.use(favicon(path.join(__dirname, './build/favicon.ico'));
 
 // initialize authentication
 // cors
