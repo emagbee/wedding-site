@@ -5,8 +5,8 @@ var config = function() {
     // if you have multiple envs, you can have a switch case here
     var config = {
         "sendgrid": {
-            "user": "app33332395@heroku.com",
-            "pass": "f3gqmcw84741"
+            "user": "app42517117@heroku.com",
+            "pass": "7cxgaoqd1042"
         }
     };
 
