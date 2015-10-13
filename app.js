@@ -6,12 +6,14 @@ var express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
     config = require('./server/config'),
+    favicon = require('serve-favicon'),
     multipart = require('connect-multiparty');
 
 var app = express();
 
 // static folder setup
 app.use(express.static(path.join(__dirname, './build/')));
+app.use(favicon(__dirname + '/build/favicon.ico'));
 
 // initialize authentication
 // cors
