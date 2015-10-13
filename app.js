@@ -6,35 +6,9 @@ var express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
     config = require('./server/config'),
-    // exphbs = require('express-handlebars'),
-    multipart = require('connect-multiparty'),
-    flash = require('connect-flash');
+    multipart = require('connect-multiparty');
 
-// create express instance
 var app = express();
-
-// adding handlebars
-// app.set('views', path.join(__dirname + '/server', 'view'));
-// app.engine('hbs', exphbs({
-//     extname: '.hbs',
-//     defaultLayout: 'main',
-//     layoutsDir: "./server/view/layouts/",
-//     partialsDir: "./server/view/partials/",
-//     helpers: {
-//         pagination: function(pages, current, section) {
-//             var content = "";
-//             for (var i = 1; i < pages + 1; i++) {
-//                 if (i != current)
-//                     content += '<li><a href="/cms/' + section + '/page/' + i + ' ">' + i + '</a></li>'
-//                 else
-//                     content += '<li class="active"><a href="/cms/' + section + '/page/' + i + ' ">' + i + '</a></li>'
-//             };
-//             return content
-//         }
-//     }
-// }));
-// app.set('view engine', '.hbs');
-
 
 // static folder setup
 app.use(express.static(path.join(__dirname, './build/')));
@@ -55,15 +29,6 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
     extended: true
 }));
 app.use(multipart());
-
-app.use(flash());
-app.use(function(req, res, next) {
-    // if there's a flash message in the session request,
-    // make it available in the response, then delete it
-    res.locals.sessionFlash = req.session.sessionFlash;
-    delete req.session.sessionFlash;
-    next();
-});
 
 // load all the routes
 var router = require('./server/route/index');
