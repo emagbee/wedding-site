@@ -3,12 +3,17 @@ var config = require('../config'),
 
 exports.send = function (req, res) {
     console.log('SEEEEEEEEEND');
+    console.log(req.body.email)
+    console.log(req.body.first_name)
+    console.log(req.body.last_name)
+    console.log(req.body.attending)
+    console.log(req.body.plus_one)
     var emailID = Math.floor(Math.random() * 1000) + 1;
 	sendgrid.send({
         to: 'calebjeffrey.dev@gmail.com',
         from: req.body.email,
         subject: 'Wedding RSVP #' + emailID,
-        text: req.body.message
+        text: 'firstname: ' + req.body.first_name + ' lastname: ' + req.body.last_name + ' email: ' + req.body.email + ' attending: ' + req.body.attending + ' plusone: ' + req.body.plus_one
     }, function(err, json) {
         if (err) return res.send("{success:false}");
         // sendgrid.send({
