@@ -1,10 +1,10 @@
 var config = require('../config'),
-    sendgrid  = require('sendgrid')(config.sendgrid.user,config.sendgrid.pass);
+    sendgrid  = require('sendgrid')(config.sendgrid.user, config.sendgrid.pass);
 
 exports.send = function (req, res) {
     var emailID = Math.floor(Math.random() * 1000) + 1;
 	sendgrid.send({
-        to: 'calebjeffrey.dev@gmail.com',
+        to: 'huntleywedding2016@gmail.com',
         from: req.body.email,
         subject: 'Wedding RSVP #' + emailID,
         text: 'firstname: ' + req.body.first_name + ' lastname: ' + req.body.last_name + ' email: ' + req.body.email + ' attending: ' + req.body.attending + ' plusone: ' + req.body.plus_one
