@@ -76,7 +76,7 @@ module.exports = BaseView.extend({
     },
 
     resetForm: function() {
-        this.ui.form.reset();
+        this.ui.form[0].reset();
     },
 
     validEmail: function(email) {

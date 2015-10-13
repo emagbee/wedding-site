@@ -125,3 +125,17 @@
 	margin: 65px auto 0 auto;
 	width: 450px;
 }
+
+.error, .success {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.errors-showing .error {
+    display: block;
+}
+
+.success-showing .success {
+    display: block;
+}
