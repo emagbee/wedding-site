@@ -2,8 +2,6 @@ var BaseView = require('./BaseView');
 
 module.exports = BaseView.extend({
 
-    className: 'page page-index',
-
     template: false,
 
     el: 'header',

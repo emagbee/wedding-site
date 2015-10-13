@@ -3,7 +3,7 @@ var template = require('templates/rsvp.hbs');
 
 module.exports = BaseView.extend({
 
-    className: 'page page-index',
+    className: 'page page-rsvp',
 
     template: template,
 
