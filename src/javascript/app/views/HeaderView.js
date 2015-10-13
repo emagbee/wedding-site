@@ -18,7 +18,6 @@ module.exports = BaseView.extend({
     },
 
     initialize: function () {
-        console.log(this.el)
         this.bindUIElements();
         this.delegateEvents();
     },
