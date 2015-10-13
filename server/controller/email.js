@@ -2,12 +2,6 @@ var config = require('../config'),
     sendgrid  = require('sendgrid')(config.sendgrid.user,config.sendgrid.pass);
 
 exports.send = function (req, res) {
-    console.log('SEEEEEEEEEND');
-    console.log(req.body.email)
-    console.log(req.body.first_name)
-    console.log(req.body.last_name)
-    console.log(req.body.attending)
-    console.log(req.body.plus_one)
     var emailID = Math.floor(Math.random() * 1000) + 1;
 	sendgrid.send({
         to: 'calebjeffrey.dev@gmail.com',
