@@ -38,15 +38,15 @@ module.exports = BaseView.extend({
         if (this.errors.length === 0) {
             var self = this;
 
-            // $.ajax({
-            //     url: window.location.origin + '/form',
-            //     type: 'post',
-            //     dataType: 'json',
-            //     data: this.ui.form.serialize(),
-            //     success: function(data) {
-            //         // self.onSuccess();
-            //     }
-            // });
+            $.ajax({
+                url: window.location.origin + '/form',
+                type: 'post',
+                dataType: 'json',
+                data: this.ui.form.serialize(),
+                success: function(data) {
+                    // self.onSuccess();
+                }
+            });
 
             this.onSuccess();
 
