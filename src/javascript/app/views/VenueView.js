@@ -3,7 +3,7 @@ var template = require('templates/venue.hbs');
 
 module.exports = BaseView.extend({
 
-    className: 'page page-index',
+    className: 'page page-venue',
 
     template: template,
 

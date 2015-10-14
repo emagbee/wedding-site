@@ -3,7 +3,7 @@ var template = require('templates/registry.hbs');
 
 module.exports = BaseView.extend({
 
-    className: 'page page-index',
+    className: 'page page-registry',
 
     template: template,
 

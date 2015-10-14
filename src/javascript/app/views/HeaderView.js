@@ -2,8 +2,6 @@ var BaseView = require('./BaseView');
 
 module.exports = BaseView.extend({
 
-    className: 'page page-index',
-
     template: false,
 
     el: 'header',
@@ -20,7 +18,6 @@ module.exports = BaseView.extend({
     },
 
     initialize: function () {
-        console.log(this.el)
         this.bindUIElements();
         this.delegateEvents();
     },
