@@ -5,6 +5,7 @@ header {
 	min-height: 90px;
 	text-align:center;
 	background-color: $blueDark;
+	z-index: 100;
 
 	h1 {
 		 color: $lightYellow;
@@ -24,6 +25,7 @@ header {
 		background-color: rgba($blueDark, 0.9);
 		opacity: 0;
 		transition: opacity 0.3s $easeDefault;
+		z-index: 100;
 		&.is-open {
 			opacity: 1;
 		}
@@ -63,13 +65,12 @@ header {
 		background-image: url('../images/hamburger.svg');
 		background-repeat: no-repeat;
 		text-indent: -999rem;
-		z-index: 2;
+		z-index: 100;
 		&.is-open {
 			background-image: url('../images/close.svg');
 			width: 80px;
 			height: 52px;
 			right: 10px;
-
 		}
 		&:focus {
 			outline: none;
