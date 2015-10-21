@@ -43,7 +43,6 @@ module.exports = Backbone.Marionette.Controller.extend({
         var url = options.url;
         var trigger = options.trigger ? options.trigger : false; 
 
-        console.log(url.replace(/\//g, ''))
         var pageClass = url.replace(/\//g, '');
         if (!pageClass) {
             pageClass = 'home';
