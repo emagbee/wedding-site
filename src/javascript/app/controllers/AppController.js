@@ -49,7 +49,7 @@ module.exports = Backbone.Marionette.Controller.extend({
             pageClass = 'home';
         }
 
-        $('.header-link').removeClass('active');
+        $('.header-link').add('.btn-rsvp').removeClass('active');
         $('.' + pageClass).addClass('active');
 
         app.appRouter.navigate(url, {

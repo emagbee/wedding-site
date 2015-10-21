@@ -9,12 +9,14 @@ module.exports = BaseView.extend({
     ui: {
         hamburger: '.btn-hamburger',
         menu: '.menu',
-        menuLinks: '.header-link'
+        menuLinks: '.header-link',
+        rsvp: '.btn-rsvp'
     },
 
     events: {
         'click @ui.hamburger': 'onClickHamburger',
-        'click @ui.menuLinks': 'onClickMenuLink'
+        'click @ui.menuLinks': 'onClickMenuLink',
+        'click @ui.rsvp': 'onClickMenuLink'
     },
 
     initialize: function () {
@@ -25,7 +27,7 @@ module.exports = BaseView.extend({
             pageClass = 'home';
         }
 
-        $('.header-link').removeClass('active');
+        $('.header-link').add('.btn-rsvp').removeClass('active');
         $('.' + pageClass).addClass('active');
     },
 
@@ -36,6 +38,7 @@ module.exports = BaseView.extend({
     onClickMenuLink: function(e) {
         var $target = $(e.currentTarget);
         this.ui.menuLinks.removeClass('active');
+        this.ui.rsvp.removeClass('active');
         $target.addClass('active');
         this.onClickHamburger();
     },
