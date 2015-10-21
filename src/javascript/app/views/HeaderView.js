@@ -20,6 +20,13 @@ module.exports = BaseView.extend({
     initialize: function () {
         this.bindUIElements();
         this.delegateEvents();
+        var pageClass = window.location.pathname.replace(/\//g, '');
+        if (!pageClass) {
+            pageClass = 'home';
+        }
+
+        $('.header-link').removeClass('active');
+        $('.' + pageClass).addClass('active');
     },
 
     onClickHamburger: function() {

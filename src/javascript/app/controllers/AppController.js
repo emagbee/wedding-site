@@ -41,7 +41,16 @@ module.exports = Backbone.Marionette.Controller.extend({
         app.onload = false;
 
         var url = options.url;
-        var trigger = options.trigger ? options.trigger : false;
+        var trigger = options.trigger ? options.trigger : false; 
+
+        console.log(url.replace(/\//g, ''))
+        var pageClass = url.replace(/\//g, '');
+        if (!pageClass) {
+            pageClass = 'home';
+        }
+
+        $('.header-link').removeClass('active');
+        $('.' + pageClass).addClass('active');
 
         app.appRouter.navigate(url, {
             trigger: trigger
