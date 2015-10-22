@@ -30,7 +30,7 @@ button {
         padding: 10px 30px 10px 30px;
         border: solid $brightOrange 2px;
         text-decoration: none;
-        &:hover {
+        &:hover, &.active {
             transition: opacity 0.3s $easeDefault;
             background: $brightOrange;
             text-decoration: none;

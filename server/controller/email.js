@@ -7,7 +7,7 @@ exports.send = function (req, res) {
         to: 'huntleywedding2016@gmail.com',
         from: req.body.email,
         subject: 'Wedding RSVP #' + emailID,
-        text: 'firstname: ' + req.body.first_name + ' lastname: ' + req.body.last_name + ' email: ' + req.body.email + ' attending: ' + req.body.attending + ' plusone: ' + req.body.plus_one
+        text: 'firstname: ' + req.body.first_name + '\nlastname: ' + req.body.last_name + ' \nemail: ' + req.body.email + ' \nattending: ' + req.body.attending + ' \nplusone: ' + req.body.plus_one
     }, function(err, json) {
         if (err) return res.send("{success:false}");
         // sendgrid.send({
