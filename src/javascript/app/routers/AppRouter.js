@@ -9,6 +9,7 @@ module.exports = Marionette.AppRouter.extend({
         'hotel(/)': 'hotel',
         'registry(/)': 'registry',
         'rsvp(/)': 'rsvp',
+        'photos(/)': 'photos',
         '*default': 'defaultHandler'
     },
 
