@@ -8,6 +8,7 @@ var BaseView = require('views/BaseView');
 var IndexView = require('views/IndexView');
 var VenueView = require('views/VenueView');
 var HotelView = require('views/HotelView');
+var PhotosView = require('views/PhotosView');
 var RSVPView = require('views/RSVPView');
 var RegistryView = require('views/RegistryView');
 var HeaderView = require('views/HeaderView');
@@ -83,6 +84,11 @@ module.exports = Backbone.Marionette.Controller.extend({
     registry: function () {
         var registryView = new RegistryView();
         app.regionMain.show(registryView);
+    },
+
+    photos: function () {
+        var photosView = new PhotosView();
+        app.regionMain.show(photosView);
     },
 
     defaultHandler: function (route) {
