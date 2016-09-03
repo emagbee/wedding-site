@@ -54,3 +54,24 @@ header {
     padding-right: 30px;
     padding-left: 30px;
 }
+
+.photos-img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.photos-img:hover {
+    border: 1px solid #777;
+}
+
+.photos-img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
